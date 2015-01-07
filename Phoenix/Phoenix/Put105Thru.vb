@@ -143,11 +143,11 @@ Public Class Put105Thru
         menu_Mode.Enabled = True
         menu_DelBatch.Enabled = True
         'PCBSS
-        'My.Settings.phxSQLConn = "User ID=PhoenixUser;Data Source=" & My.Settings.SQLAddress & "\Phoenix;;FailOver Partner=192.168.204.3\Phoenix;Password=password;Initial Catalog=PhoenixData;" & _
-        '        "Connect Timeout=3;Integrated Security=False;Persist Security Info=False;"
-        'UNIONB
-        My.Settings.phxSQLConn = "User ID=phoenix;Data Source=" & My.Settings.SQLAddress & "\ESS;Password=Ph03nixSQL;Initial Catalog=Phoenix;" & _
+        My.Settings.phxSQLConn = "User ID=PhoenixUser;Data Source=" & My.Settings.SQLAddress & "\Phoenix;;FailOver Partner=192.168.204.3\Phoenix;Password=password;Initial Catalog=PhoenixData;" & _
                 "Connect Timeout=3;Integrated Security=False;Persist Security Info=False;"
+        'Union'
+        'My.Settings.phxSQLConn = "User ID=PhoenixUser;Data Source=" & My.Settings.SQLAddress & "\ESS;;Password=Ph03nixSQL;Initial Catalog=Phoenix;" & _
+        '        "Connect Timeout=3;Integrated Security=False;Persist Security Info=False;"
         BGW_SQLCheck.RunWorkerAsync()
         isOptions = False
         setStatus("Stopped", Color.OrangeRed)
@@ -262,9 +262,15 @@ Public Class Put105Thru
         If My.Settings.FAMISKeyword = "UAPSUP" Then
             menu_UAPSUP.Checked = True
             menu_UAPCCS.Checked = False
-        Else
+            menu_Worker.Checked = False
+        ElseIf My.Settings.FAMISKeyword = "UAPCCS" Then
             menu_UAPSUP.Checked = False
             menu_UAPCCS.Checked = True
+            menu_Worker.Checked = False
+        Else
+            menu_UAPSUP.Checked = False
+            menu_UAPCCS.Checked = False
+            menu_Worker.Checked = True
         End If
     End Sub
     Private Sub SetConfig()
@@ -2212,7 +2218,23 @@ Public Class Put105Thru
         If Not menu_UAPSUP.Checked Then
             menu_UAPSUP.Checked = True
             menu_UAPCCS.Checked = False
+            menu_Worker.Checked = False
             My.Settings.FAMISKeyword = "UAPSUP"
+        End If
+        SetConfig()
+    End Sub
+    Private Sub menu_Worker_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles menu_Worker.Click
+        Dim RegReader As Microsoft.Win32.RegistryKey
+        Dim KeyValue As String = "Software\\Phoenix\\"
+        RegReader = My.Computer.Registry.LocalMachine.OpenSubKey(KeyValue, True)
+        If Not RegReader Is Nothing Then
+            RegReader.SetValue("Keyword", "WORKER")
+        End If
+        If Not menu_Worker.Checked Then
+            menu_UAPSUP.Checked = False
+            menu_UAPCCS.Checked = False
+            menu_Worker.Checked = True
+            My.Settings.FAMISKeyword = "WORKER"
         End If
         SetConfig()
     End Sub
@@ -2226,6 +2248,7 @@ Public Class Put105Thru
         If Not menu_UAPCCS.Checked Then
             menu_UAPSUP.Checked = False
             menu_UAPCCS.Checked = True
+            menu_Worker.Checked = False
             My.Settings.FAMISKeyword = "UAPCCS"
         End If
         SetConfig()

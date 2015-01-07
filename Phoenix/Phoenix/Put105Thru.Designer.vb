@@ -22,63 +22,64 @@ Partial Class Put105Thru
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container
+        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Put105Thru))
-        Me.txt_Info = New System.Windows.Forms.RichTextBox
-        Me.grp_Mode = New System.Windows.Forms.GroupBox
-        Me.rdo_Exist = New System.Windows.Forms.RadioButton
-        Me.rdo_Manual = New System.Windows.Forms.RadioButton
-        Me.rdo_GUMP = New System.Windows.Forms.RadioButton
-        Me.btn_GUMPStart = New System.Windows.Forms.Button
-        Me.btn_GUMPStop = New System.Windows.Forms.Button
-        Me.grp_GUMPControls = New System.Windows.Forms.GroupBox
-        Me.grp_ExistingControls = New System.Windows.Forms.GroupBox
-        Me.Label1 = New System.Windows.Forms.Label
-        Me.txt_CaseNumber = New System.Windows.Forms.TextBox
-        Me.btn_Search = New System.Windows.Forms.Button
-        Me.grp_ManualControls = New System.Windows.Forms.GroupBox
-        Me.btn_ManualStart_U = New System.Windows.Forms.Button
-        Me.btn_ManualStart_A = New System.Windows.Forms.Button
-        Me.txt_Status = New System.Windows.Forms.TextBox
-        Me.Label2 = New System.Windows.Forms.Label
-        Me.Label3 = New System.Windows.Forms.Label
-        Me.txt_BatchNumber = New System.Windows.Forms.TextBox
-        Me.BGW_ReadGUMP = New System.ComponentModel.BackgroundWorker
-        Me.BGW_GUMPProcess = New System.ComponentModel.BackgroundWorker
-        Me.menu_105 = New System.Windows.Forms.MenuStrip
-        Me.menu_File = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Exit = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Edit = New System.Windows.Forms.ToolStripMenuItem
-        Me.GUMPKeywordToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_UAPSUP = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_UAPCCS = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator
-        Me.menu_DelBatch = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_DelGUMP = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator
-        Me.menu_Options = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Mode = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_GUMP = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Existing = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Manual = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_ViewBatch = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_IMPSBatch = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_ViewGUMP = New System.Windows.Forms.ToolStripMenuItem
-        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.menu_Update = New System.Windows.Forms.ToolStripMenuItem
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator
-        Me.menu_About = New System.Windows.Forms.ToolStripMenuItem
-        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
-        Me.BGW_SQLCheck = New System.ComponentModel.BackgroundWorker
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox
+        Me.txt_Info = New System.Windows.Forms.RichTextBox()
+        Me.grp_Mode = New System.Windows.Forms.GroupBox()
+        Me.rdo_Exist = New System.Windows.Forms.RadioButton()
+        Me.rdo_Manual = New System.Windows.Forms.RadioButton()
+        Me.rdo_GUMP = New System.Windows.Forms.RadioButton()
+        Me.btn_GUMPStart = New System.Windows.Forms.Button()
+        Me.btn_GUMPStop = New System.Windows.Forms.Button()
+        Me.grp_GUMPControls = New System.Windows.Forms.GroupBox()
+        Me.grp_ExistingControls = New System.Windows.Forms.GroupBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txt_CaseNumber = New System.Windows.Forms.TextBox()
+        Me.btn_Search = New System.Windows.Forms.Button()
+        Me.grp_ManualControls = New System.Windows.Forms.GroupBox()
+        Me.btn_ManualStart_U = New System.Windows.Forms.Button()
+        Me.btn_ManualStart_A = New System.Windows.Forms.Button()
+        Me.txt_Status = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_BatchNumber = New System.Windows.Forms.TextBox()
+        Me.BGW_ReadGUMP = New System.ComponentModel.BackgroundWorker()
+        Me.BGW_GUMPProcess = New System.ComponentModel.BackgroundWorker()
+        Me.menu_105 = New System.Windows.Forms.MenuStrip()
+        Me.menu_File = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Edit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GUMPKeywordToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_UAPSUP = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_UAPCCS = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Worker = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menu_DelBatch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_DelGUMP = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator4 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menu_Options = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Mode = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_GUMP = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Existing = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Manual = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_ViewBatch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_IMPSBatch = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_ViewGUMP = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.menu_Update = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.menu_About = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BGW_SQLCheck = New System.ComponentModel.BackgroundWorker()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.trayIcon = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.tray_Menu = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.tray_Exit = New System.Windows.Forms.ToolStripMenuItem
-        Me.BGW_Existing = New System.ComponentModel.BackgroundWorker
-        Me.BGW_HideTray = New System.ComponentModel.BackgroundWorker
-        Me.BGW_OnlineStatus = New System.ComponentModel.BackgroundWorker
+        Me.tray_Exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BGW_Existing = New System.ComponentModel.BackgroundWorker()
+        Me.BGW_HideTray = New System.ComponentModel.BackgroundWorker()
+        Me.BGW_OnlineStatus = New System.ComponentModel.BackgroundWorker()
         Me.grp_Mode.SuspendLayout()
         Me.grp_GUMPControls.SuspendLayout()
         Me.grp_ExistingControls.SuspendLayout()
@@ -355,7 +356,7 @@ Partial Class Put105Thru
         '
         'GUMPKeywordToolStripMenuItem1
         '
-        Me.GUMPKeywordToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_UAPSUP, Me.menu_UAPCCS})
+        Me.GUMPKeywordToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.menu_UAPSUP, Me.menu_UAPCCS, Me.menu_Worker})
         Me.GUMPKeywordToolStripMenuItem1.Name = "GUMPKeywordToolStripMenuItem1"
         Me.GUMPKeywordToolStripMenuItem1.Size = New System.Drawing.Size(165, 22)
         Me.GUMPKeywordToolStripMenuItem1.Text = "GUMP &Keyword"
@@ -365,14 +366,20 @@ Partial Class Put105Thru
         Me.menu_UAPSUP.Checked = True
         Me.menu_UAPSUP.CheckState = System.Windows.Forms.CheckState.Checked
         Me.menu_UAPSUP.Name = "menu_UAPSUP"
-        Me.menu_UAPSUP.Size = New System.Drawing.Size(119, 22)
+        Me.menu_UAPSUP.Size = New System.Drawing.Size(152, 22)
         Me.menu_UAPSUP.Text = "UAPSUP"
         '
         'menu_UAPCCS
         '
         Me.menu_UAPCCS.Name = "menu_UAPCCS"
-        Me.menu_UAPCCS.Size = New System.Drawing.Size(119, 22)
+        Me.menu_UAPCCS.Size = New System.Drawing.Size(152, 22)
         Me.menu_UAPCCS.Text = "UAPCCS"
+        '
+        'menu_Worker
+        '
+        Me.menu_Worker.Name = "menu_Worker"
+        Me.menu_Worker.Size = New System.Drawing.Size(152, 22)
+        Me.menu_Worker.Text = "WORKER"
         '
         'ToolStripSeparator3
         '
@@ -633,5 +640,6 @@ Partial Class Put105Thru
     Friend WithEvents ToolStripSeparator1 As System.Windows.Forms.ToolStripSeparator
     Private WithEvents BGW_OnlineStatus As System.ComponentModel.BackgroundWorker
     Friend WithEvents menu_IMPSBatch As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents menu_Worker As System.Windows.Forms.ToolStripMenuItem
 
 End Class

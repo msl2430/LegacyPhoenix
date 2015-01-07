@@ -1476,6 +1476,7 @@ Public Class processingFAMIS
                 isBlankedSQL(FAMISApplicationInformation.ED2, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EE, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EF, "FAMISApplicantInformation")
+
                 If FAMISApplicationInformation.EG.GetData <> "R" And (FAMISTANFInformation.IA.GetData() = " " And FAMISFoodStampInformation.LA.GetData() = " " And FAMISMedicaidInformation.WA.GetData() <> " ") Then isBlankedSQL(FAMISApplicationInformation.EG, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EH, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EJ, "FAMISApplicantInformation")

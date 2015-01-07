@@ -64,6 +64,10 @@ Public Class FAMISDataAdjustments
                     .QL.SetData(" ")
                 End If
             End If
+            If FAMISTANFInformation.IA.GetData = " " And FAMISTANFInformation.IB.GetData = "   " And FAMISTANFInformation.IC.GetData = "        " Then
+                .QL.SetData(" ")
+                .TD.SetData(" ")
+            End If
         End With
     End Sub
     Public Sub del_LineN(ByRef FoodInfo As FoodStampInformation)
@@ -226,12 +230,23 @@ Public Class FAMISDataAdjustments
         If FAMISApplicationInformation.XK.GetData = "0" Then FAMISApplicationInformation.XK.SetData(" ")
         If FAMISApplicationInformation.XN.GetData = "00" Then FAMISApplicationInformation.XN.SetData("  ")
         FAMISFoodStampInformation.NM.SetData("       ")
-        If FAMISTANFInformation.IA.GetData = " " And FAMISTANFInformation.IB.GetData = "   " And FAMISTANFInformation.IC.GetData = "        " Then FAMISIncomeInformation.JI.SetData(" ") : FAMISIncomeInformation.KI.SetData(" ")
+        If FAMISTANFInformation.IA.GetData = " " And FAMISTANFInformation.IB.GetData = "   " And FAMISTANFInformation.IC.GetData = "        " Then
+            FAMISIncomeInformation.JI.SetData(" ")
+            FAMISIncomeInformation.KI.SetData(" ")
+            FAMISApplicationInformation.BH.SetData(" ")
+            FAMISApplicationInformation.BQ.SetData(" ")
+            FAMISIndividualsInformation.GB.SetData(" ")
+            FAMISIndividualsInformation.GC.SetData(" ")
+            FAMISIndividualsInformation.GH.SetData(" ")
+            FAMISIndividualsInformation.GI.SetData(" ")
+            FAMISIndividualsInformation.GK.SetData(" ")
+        End If
+
         If FAMISMedicaidInformation.WW.GetData = "0  " Or FAMISMedicaidInformation.WW.GetData = "  0" Or _
            FAMISMedicaidInformation.WW.GetData = "NPA" Or FAMISMedicaidInformation.WW.GetData = "NP7" Or _
            FAMISMedicaidInformation.WW.GetData = "NP8" Then FAMISMedicaidInformation.WW.SetData("   ")
         'If FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> "0" And FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> " " Then FAMISApplicationInformation.DF.SetData("0" & FAMISApplicationInformation.DF.GetData.Substring(0, 2))
-        If FAMISFoodStampInformation.LR.GetData = "D" Then FAMISFoodStampInformation.MR.SetData("454") '--changed from 411 3/22/11-- --changed from 435 9/12/2012--
+        'If FAMISFoodStampInformation.LR.GetData = "D" Then FAMISFoodStampInformation.MR.SetData("454") '--changed from 411 3/22/11-- --changed from 435 9/12/2012-- --Removed 1/7/2015 as request from Jani email--
         If FAMISApplicationInformation.EG.GetData = "1" Or _
            FAMISApplicationInformation.EG.GetData = "C" Or _
            FAMISApplicationInformation.EG.GetData = "I" Or _

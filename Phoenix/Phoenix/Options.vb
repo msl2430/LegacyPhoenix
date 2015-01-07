@@ -58,11 +58,11 @@ Public Class Options
         My.Settings.isArchive = chk_Archive.Checked
         My.Settings.ArchiveDirectory = txt_Archive.Text
         'PCBSS
-        'My.Settings.phxSQLConn = "User ID=PhoenixUser;Data Source=" & My.Settings.SQLAddress & "\Phoenix;FailOver Partner=192.168.204.3\Phoenix;Password=password;Initial Catalog=PhoenixData;" & _
-        '   "Connect Timeout=3;Integrated Security=False;Persist Security Info=True;"
+        My.Settings.phxSQLConn = "User ID=PhoenixUser;Data Source=" & My.Settings.SQLAddress & "\Phoenix;FailOver Partner=192.168.204.3\Phoenix;Password=password;Initial Catalog=PhoenixData;" & _
+           "Connect Timeout=3;Integrated Security=False;Persist Security Info=True;"
         'UNION
-        My.Settings.phxSQLConn = "User ID=phoenix;Data Source=" & My.Settings.SQLAddress & "\ESS;Password=Ph03nixSQL;Initial Catalog=Phoenix;" & _
-                "Connect Timeout=3;Integrated Security=False;Persist Security Info=False;"
+        'My.Settings.phxSQLConn = "User ID=phoenix;Data Source=" & My.Settings.SQLAddress & "\ESS;Password=Ph03nixSQL;Initial Catalog=Phoenix;" & _
+        '        "Connect Timeout=3;Integrated Security=False;Persist Security Info=False;"
         My.Settings.UpdateAddress = txt_UpdateAddress.Text
         Me.Close()
     End Sub

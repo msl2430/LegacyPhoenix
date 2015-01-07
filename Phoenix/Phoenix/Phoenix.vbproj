@@ -66,7 +66,8 @@
       <HintPath>..\..\clsGLink\clsGLink\bin\Release\Interop.GlinkApi.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-    <Reference Include="phxFAMIS">
+    <Reference Include="phxFAMIS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\clsFAMIS\clsFAMIS\bin\Release\phxFAMIS.dll</HintPath>
     </Reference>
     <Reference Include="phxGLink, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
