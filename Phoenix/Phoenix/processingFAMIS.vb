@@ -812,7 +812,7 @@ Public Class processingFAMIS
             SQLCommand.ExecuteNonQuery()
             ParentForm_Put105.isCaseError = True
         Catch ex As Exception
-            MessageBox.Show("Error!" & vbCrLf & "'" & ex.Message.ToString & "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            MessageBox.Show("Store SQL Error!" & vbCrLf & "'" & ex.Message.ToString & "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             ParentForm_Put105.WriteLog("SQL Error " & CASENUMBER & " - " & ex.Message.ToString, True)
             ParentForm_Put105.isCaseError = True
         Finally
@@ -821,14 +821,24 @@ Public Class processingFAMIS
         End Try
     End Sub
     Private Function ConvertDate(ByVal tempDate As String) As String
-        If tempDate = "        " Or tempDate = "00000000  " Or tempDate = "          " Or tempDate = "00000000" Then
-            Return "        "
-        ElseIf tempDate.Substring(0, 1) = "-" Then
-            Return "        "
-        Else
-            tempDate = tempDate.Insert(2, "/").Insert(5, "/")
-            Return tempDate
-        End If
+        Try
+            If tempDate = "        " Or tempDate = "00000000  " Or tempDate = "          " Or tempDate = "00000000" Then
+                Return "        "
+            ElseIf tempDate.Length > 5 Then
+                If tempDate.Substring(0, 1) = "-" Then
+                    Return "        "
+                Else
+                    tempDate = tempDate.Insert(2, "/").Insert(5, "/")
+                    Return tempDate
+                End If
+            Else
+                Return "        "
+            End If
+        Catch ex As Exception
+            MessageBox.Show("Convert Date Error!" & vbCrLf & "'" & ex.Message.ToString & "'", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            ParentForm_Put105.WriteLog("Error " & CASENUMBER & " - " & ex.Message.ToString, True)
+            ParentForm_Put105.isCaseError = True
+        End Try
         Return -1
     End Function
     Private Function isValidDate(ByVal tempDate As String) As Boolean
@@ -964,7 +974,7 @@ Public Class processingFAMIS
         BlockCompare(FAMISApplicationInformation.ED2, SQLApplicationInformation.ED2)
         BlockCompare(FAMISApplicationInformation.EE, SQLApplicationInformation.EE)
         BlockCompare(FAMISApplicationInformation.EF, SQLApplicationInformation.EF)
-        BlockCompare(FAMISApplicationInformation.EG, SQLApplicationInformation.EG)
+        'BlockCompare(FAMISApplicationInformation.EG, SQLApplicationInformation.EG)
         BlockCompare(FAMISApplicationInformation.EH, SQLApplicationInformation.EH)
         BlockCompare(FAMISApplicationInformation.EI, SQLApplicationInformation.EI)
         BlockCompare(FAMISApplicationInformation.EJ, SQLApplicationInformation.EJ)
@@ -1131,7 +1141,7 @@ Public Class processingFAMIS
         BlockCompare(FAMISFoodStampInformation.LO, SQLFoodStampInformation.LO)
         BlockCompare(FAMISFoodStampInformation.LP, SQLFoodStampInformation.LP)
         BlockCompare(FAMISFoodStampInformation.LQ, SQLFoodStampInformation.LQ)
-        BlockCompare(FAMISFoodStampInformation.LR, SQLFoodStampInformation.LR)
+        'BlockCompare(FAMISFoodStampInformation.LR, SQLFoodStampInformation.LR)
         BlockCompare(FAMISFoodStampInformation.LS, SQLFoodStampInformation.LS)
         BlockCompare(FAMISFoodStampInformation.LT, SQLFoodStampInformation.LT)
 
@@ -1152,7 +1162,7 @@ Public Class processingFAMIS
         BlockCompare(FAMISFoodStampInformation.MO, SQLFoodStampInformation.MO)
         BlockCompare(FAMISFoodStampInformation.MP, SQLFoodStampInformation.MP)
         BlockCompare(FAMISFoodStampInformation.MQ, SQLFoodStampInformation.MQ)
-        BlockCompare(FAMISFoodStampInformation.MR, SQLFoodStampInformation.MR)
+        'BlockCompare(FAMISFoodStampInformation.MR, SQLFoodStampInformation.MR)
         '"        'blockcompare	(FAMISFoodStampInformation.MS		,SQLFoodStampInformation.MS		 ,"	")			"
         '"        'blockcompare	(FAMISFoodStampInformation.MT		,SQLFoodStampInformation.MT		 ,"	")			"
 
@@ -1477,7 +1487,7 @@ Public Class processingFAMIS
                 isBlankedSQL(FAMISApplicationInformation.EE, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EF, "FAMISApplicantInformation")
 
-                If FAMISApplicationInformation.EG.GetData <> "R" And (FAMISTANFInformation.IA.GetData() = " " And FAMISFoodStampInformation.LA.GetData() = " " And FAMISMedicaidInformation.WA.GetData() <> " ") Then isBlankedSQL(FAMISApplicationInformation.EG, "FAMISApplicantInformation")
+                'If FAMISApplicationInformation.EG.GetData <> "R" And (FAMISTANFInformation.IA.GetData() = " " And FAMISFoodStampInformation.LA.GetData() = " " And FAMISMedicaidInformation.WA.GetData() <> " ") Then isBlankedSQL(FAMISApplicationInformation.EG, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EH, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EJ, "FAMISApplicantInformation")
                 isBlankedSQL(FAMISApplicationInformation.EK, "FAMISApplicantInformation")
@@ -1517,7 +1527,7 @@ Public Class processingFAMIS
                 isBlankedSQL(FAMISFoodStampInformation.LO, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.LP, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.LQ, "FAMISFoodStampInformation")
-                isBlankedSQL(FAMISFoodStampInformation.LR, "FAMISFoodStampInformation")
+                'isBlankedSQL(FAMISFoodStampInformation.LR, "FAMISFoodStampInformation")
                 isBlankedSQL_DateTime(FAMISFoodStampInformation.LT, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.MD, "FAMISFoodStampInformation")
                 If FAMISFoodStampInformation.ND.GetData = "1" And FAMISFoodStampInformation.NE.GetData <> "1" Then isBlankedSQL(FAMISFoodStampInformation.NE, "FAMISFoodStampInformation")
@@ -1548,7 +1558,7 @@ Public Class processingFAMIS
                 isBlankedSQL(FAMISFoodStampInformation.MP, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.MQ, "FAMISFoodStampInformation")
                 If FAMISFoodStampInformation.MQ.GetData.Substring(0, 1) = "-" Then FAMISIndividualsInformation.FF.SetData("-")
-                isBlankedSQL(FAMISFoodStampInformation.MR, "FAMISFoodStampInformation")
+                'isBlankedSQL(FAMISFoodStampInformation.MR, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.NB, "FAMISFoodStampInformation")
                 isBlankedSQL(FAMISFoodStampInformation.NK, "FAMISFoodStampInformation")
                 If FAMISFoodStampInformation.NK.GetData.Substring(0, 1) = "-" Then FAMISIndividualsInformation.FN.SetData("-")
