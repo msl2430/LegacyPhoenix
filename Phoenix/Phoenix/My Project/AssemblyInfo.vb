@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Phoenix (Developed By: Michael Levine)")> 
 <Assembly: AssemblyCompany("Michael Levine")> 
 <Assembly: AssemblyProduct("Phoenix (Developed By: Michael Levine)")> 
-<Assembly: AssemblyCopyright("Copyright ©  2008")> 
+<Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("5.6.111.5")> 
+<Assembly: AssemblyVersion("5.6.111.6")> 
 <Assembly: AssemblyFileVersion("4.0.0.0")> 

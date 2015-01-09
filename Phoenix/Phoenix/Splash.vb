@@ -7,6 +7,7 @@ Public NotInheritable Class Splash
     Private Sub Splash_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         isUpdating = True
         Version.Text = My.Application.Info.Version.Major.ToString & "." & My.Application.Info.Version.Minor.ToString & "." & My.Application.Info.Version.Revision.ToString
+        lblCopyright.Text = "Copyright" & Chr(169) & " " & DateTime.Now.Year
         If isSplash Then
             If File.Exists(My.Application.Info.DirectoryPath & "\phxConfig.dat") Then
                 Try

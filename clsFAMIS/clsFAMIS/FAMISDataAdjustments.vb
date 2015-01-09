@@ -247,6 +247,7 @@ Public Class FAMISDataAdjustments
            FAMISMedicaidInformation.WW.GetData = "NP8" Then FAMISMedicaidInformation.WW.SetData("   ")
         'If FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> "0" And FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> " " Then FAMISApplicationInformation.DF.SetData("0" & FAMISApplicationInformation.DF.GetData.Substring(0, 2))
         'If FAMISFoodStampInformation.LR.GetData = "D" Then FAMISFoodStampInformation.MR.SetData("454") '--changed from 411 3/22/11-- --changed from 435 9/12/2012-- --Removed 1/7/2015 as request from Jani email--
+        If FAMISFoodStampInformation.LR.GetData = "W" Then FAMISFoodStampInformation.MR.SetData("-")
         If FAMISApplicationInformation.EG.GetData = "1" Or _
            FAMISApplicationInformation.EG.GetData = "C" Or _
            FAMISApplicationInformation.EG.GetData = "I" Or _

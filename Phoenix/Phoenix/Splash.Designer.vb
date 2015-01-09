@@ -23,7 +23,8 @@ Partial Class Splash
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Splash))
-        Me.Version = New System.Windows.Forms.Label
+        Me.Version = New System.Windows.Forms.Label()
+        Me.lblCopyright = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Version
@@ -38,6 +39,18 @@ Partial Class Splash
         Me.Version.TabIndex = 6
         Me.Version.Text = "6.0.0"
         '
+        'lblCopyright
+        '
+        Me.lblCopyright.AutoSize = True
+        Me.lblCopyright.BackColor = System.Drawing.Color.FromArgb(CType(CType(48, Byte), Integer), CType(CType(3, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.lblCopyright.Font = New System.Drawing.Font("Comic Sans MS", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblCopyright.ForeColor = System.Drawing.Color.FromArgb(CType(CType(165, Byte), Integer), CType(CType(162, Byte), Integer), CType(CType(155, Byte), Integer))
+        Me.lblCopyright.Location = New System.Drawing.Point(305, 179)
+        Me.lblCopyright.Name = "lblCopyright"
+        Me.lblCopyright.Size = New System.Drawing.Size(86, 15)
+        Me.lblCopyright.TabIndex = 7
+        Me.lblCopyright.Text = "Copyright 2015"
+        '
         'Splash
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -46,6 +59,7 @@ Partial Class Splash
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(398, 198)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lblCopyright)
         Me.Controls.Add(Me.Version)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -59,5 +73,6 @@ Partial Class Splash
 
     End Sub
     Friend WithEvents Version As System.Windows.Forms.Label
+    Friend WithEvents lblCopyright As System.Windows.Forms.Label
 
 End Class
