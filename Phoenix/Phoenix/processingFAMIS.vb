@@ -1029,7 +1029,7 @@ Public Class processingFAMIS
         BlockCompare(FAMISIndividualsInformation.GH, SQLIndividualsInformation.GH)
         BlockCompare(FAMISIndividualsInformation.GI, SQLIndividualsInformation.GI)
         BlockCompare(FAMISIndividualsInformation.GJ, SQLIndividualsInformation.GJ)
-        BlockCompare(FAMISIndividualsInformation.GK, SQLIndividualsInformation.GK)
+        'BlockCompare(FAMISIndividualsInformation.GK, SQLIndividualsInformation.GK)  Removed 11/23/2015 as an attempt to fix why this block doesn't come in from txt file
         BlockCompare(FAMISIndividualsInformation.GL, SQLIndividualsInformation.GL)
 
         BlockCompare(FAMISMedicaidInformation.HA, SQLMedicaidInformation.HA)
