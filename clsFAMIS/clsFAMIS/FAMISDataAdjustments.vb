@@ -239,7 +239,7 @@ Public Class FAMISDataAdjustments
             FAMISIndividualsInformation.GC.SetData(" ")
             FAMISIndividualsInformation.GH.SetData(" ")
             FAMISIndividualsInformation.GI.SetData(" ")
-            FAMISIndividualsInformation.GK.SetData(" ")
+            'FAMISIndividualsInformation.GK.SetData(" ") --12/14/2015 Removed to see if this is the reason the block is not being brought in
         End If
 
         If FAMISMedicaidInformation.WW.GetData = "0  " Or FAMISMedicaidInformation.WW.GetData = "  0" Or _
