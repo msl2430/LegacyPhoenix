@@ -1553,7 +1553,7 @@ Public Class display105Form
         txt_TU.Text = FAMISCaseChild(PersonNumber).TU.GetData
 
         'txt_st.text = FAMISCaseChild(PersonNumber).ST.GetData
-        'txt_ya.text = FAMISCaseChild(PersonNumber).YA.GetData 
+        txt_YA.Text = FAMISCaseChild(PersonNumber).YA.GetData
     End Sub
     Private Sub FillFormC(ByVal PaymentNumber As Integer)
         txt_VA.Text = FAMISVRPInformation(0).VA.GetData
@@ -2035,7 +2035,7 @@ Public Class display105Form
         FAMISCaseChild(PersonNumber).TT.SetData(txt_TU.Text)
 
         'FAMISCaseChild(PersonNumber).ST.SetData(txt_st.text)
-        'FAMISCaseChild(PersonNumber).YA.SetData(txt_ya.text)
+        FAMISCaseChild(PersonNumber).YA.SetData(txt_YA.Text)
     End Sub
     Private Sub TransferFormC(ByVal PaymentNumber As Integer)
         FAMISVRPInformation(0).VA.SetData(txt_VA.Text)

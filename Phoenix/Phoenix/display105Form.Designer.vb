@@ -26,6 +26,8 @@ Partial Class display105Form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(display105Form))
         Me.grp_AppInfo = New System.Windows.Forms.GroupBox()
         Me.txt_EF = New System.Windows.Forms.TextBox()
+        Me.FAMISApplicantInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.PhoenixDataSet = New Phoenix.PhoenixDataSet()
         Me.Label118 = New System.Windows.Forms.Label()
         Me.txt_EG = New System.Windows.Forms.TextBox()
         Me.Label605 = New System.Windows.Forms.Label()
@@ -188,7 +190,9 @@ Partial Class display105Form
         Me.Label595 = New System.Windows.Forms.Label()
         Me.Label596 = New System.Windows.Forms.Label()
         Me.txt_AQ = New System.Windows.Forms.TextBox()
+        Me.FAMISAppendedInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txt_AG = New System.Windows.Forms.TextBox()
+        Me.FAMISCaseInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label55 = New System.Windows.Forms.Label()
         Me.Label56 = New System.Windows.Forms.Label()
         Me.Label57 = New System.Windows.Forms.Label()
@@ -235,6 +239,7 @@ Partial Class display105Form
         Me.tab_IndivMedi = New System.Windows.Forms.TabPage()
         Me.grp_IndivInfo = New System.Windows.Forms.GroupBox()
         Me.txt_FK = New System.Windows.Forms.TextBox()
+        Me.FAMISIndividualsInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txt_FL2 = New System.Windows.Forms.TextBox()
         Me.Label136 = New System.Windows.Forms.Label()
         Me.txt_FL = New System.Windows.Forms.TextBox()
@@ -336,6 +341,7 @@ Partial Class display105Form
         Me.Label699 = New System.Windows.Forms.Label()
         Me.Label200 = New System.Windows.Forms.Label()
         Me.txt_HH = New System.Windows.Forms.TextBox()
+        Me.FAMISMedicaidInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label185 = New System.Windows.Forms.Label()
         Me.txt_HP = New System.Windows.Forms.TextBox()
         Me.Label698 = New System.Windows.Forms.Label()
@@ -374,6 +380,7 @@ Partial Class display105Form
         Me.txt_HB = New System.Windows.Forms.TextBox()
         Me.txt_HJ = New System.Windows.Forms.TextBox()
         Me.txt_HA = New System.Windows.Forms.TextBox()
+        Me.FAMISAFDCInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label199 = New System.Windows.Forms.Label()
         Me.Label202 = New System.Windows.Forms.Label()
         Me.txt_HG = New System.Windows.Forms.TextBox()
@@ -400,6 +407,7 @@ Partial Class display105Form
         Me.tab_TanfIncome = New System.Windows.Forms.TabPage()
         Me.grp_IncInfo = New System.Windows.Forms.GroupBox()
         Me.txt_KQ = New System.Windows.Forms.TextBox()
+        Me.FAMISIncomeInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txt_KS = New System.Windows.Forms.TextBox()
         Me.txt_KR = New System.Windows.Forms.TextBox()
         Me.txt_KP = New System.Windows.Forms.TextBox()
@@ -586,6 +594,7 @@ Partial Class display105Form
         Me.Label478 = New System.Windows.Forms.Label()
         Me.Label507 = New System.Windows.Forms.Label()
         Me.txt_PN = New System.Windows.Forms.TextBox()
+        Me.FAMISIandAInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txt_PP = New System.Windows.Forms.TextBox()
         Me.txt_PM = New System.Windows.Forms.TextBox()
         Me.Label504 = New System.Windows.Forms.Label()
@@ -629,6 +638,7 @@ Partial Class display105Form
         Me.Label477 = New System.Windows.Forms.Label()
         Me.grp_FoodStamp = New System.Windows.Forms.GroupBox()
         Me.txt_LD = New System.Windows.Forms.TextBox()
+        Me.FAMISFoodStampInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label358 = New System.Windows.Forms.Label()
         Me.Label390 = New System.Windows.Forms.Label()
         Me.Label474 = New System.Windows.Forms.Label()
@@ -1101,6 +1111,7 @@ Partial Class display105Form
         Me.Label903 = New System.Windows.Forms.Label()
         Me.txt_UL = New System.Windows.Forms.TextBox()
         Me.txt_UI = New System.Windows.Forms.TextBox()
+        Me.FAMISCaseChildBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label902 = New System.Windows.Forms.Label()
         Me.txt_UH = New System.Windows.Forms.TextBox()
         Me.Label884 = New System.Windows.Forms.Label()
@@ -1390,6 +1401,7 @@ Partial Class display105Form
         Me.txt_PO = New System.Windows.Forms.TextBox()
         Me.Label570 = New System.Windows.Forms.Label()
         Me.txt_VQ = New System.Windows.Forms.TextBox()
+        Me.FAMISVRPInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.txt_VE = New System.Windows.Forms.TextBox()
         Me.txt_VG = New System.Windows.Forms.TextBox()
         Me.txt_VI = New System.Windows.Forms.TextBox()
@@ -1427,18 +1439,6 @@ Partial Class display105Form
         Me.txt_BatchNumber = New System.Windows.Forms.TextBox()
         Me.Label582 = New System.Windows.Forms.Label()
         Me.btn_Print = New System.Windows.Forms.LinkLabel()
-        Me.FAMISAppendedInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.PhoenixDataSet = New Phoenix.PhoenixDataSet()
-        Me.FAMISCaseInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISApplicantInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISIndividualsInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISMedicaidInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISAFDCInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISIncomeInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISIandAInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISFoodStampInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISCaseChildBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.FAMISVRPInformationBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.FAMISCaseInformationTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISCaseInformationTableAdapter()
         Me.FAMISApplicantInformationTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISApplicantInformationTableAdapter()
         Me.FAMISIndividualsInformationTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISIndividualsInformationTableAdapter()
@@ -1450,24 +1450,34 @@ Partial Class display105Form
         Me.FAMISCaseChildTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISCaseChildTableAdapter()
         Me.FAMISVRPInformationTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISVRPInformationTableAdapter()
         Me.FAMISAppendedInformationTableAdapter = New Phoenix.PhoenixDataSetTableAdapters.FAMISAppendedInformationTableAdapter()
+        Me.txt_YA = New System.Windows.Forms.TextBox()
+        Me.Label711 = New System.Windows.Forms.Label()
         Me.grp_AppInfo.SuspendLayout
+        CType(Me.FAMISApplicantInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.PhoenixDataSet,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).BeginInit
         Me.grp_CaseInfo.SuspendLayout
+        CType(Me.FAMISAppendedInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.FAMISCaseInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tab_Main.SuspendLayout
         Me.tab_CaseApp.SuspendLayout
         Me.tab_IndivMedi.SuspendLayout
         Me.grp_IndivInfo.SuspendLayout
+        CType(Me.FAMISIndividualsInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).BeginInit
         Me.grp_MediInfo.SuspendLayout
+        CType(Me.FAMISMedicaidInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.FAMISAFDCInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tab_TanfIncome.SuspendLayout
         Me.grp_IncInfo.SuspendLayout
+        CType(Me.FAMISIncomeInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1477,7 +1487,9 @@ Partial Class display105Form
         CType(Me.PictureBox10,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tab_FoodIandA.SuspendLayout
         Me.grp_IandAInfo.SuspendLayout
+        CType(Me.FAMISIandAInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         Me.grp_FoodStamp.SuspendLayout
+        CType(Me.FAMISFoodStampInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tab_105A1.SuspendLayout
@@ -1488,6 +1500,7 @@ Partial Class display105Form
         Me.grp_MediCaseInfo.SuspendLayout
         Me.tab_105B.SuspendLayout
         Me.grp_AlienInfo.SuspendLayout
+        CType(Me.FAMISCaseChildBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         Me.GroupBox1.SuspendLayout
         Me.grp_ChildIncInfo.SuspendLayout
         CType(Me.PictureBox18,System.ComponentModel.ISupportInitialize).BeginInit
@@ -1495,17 +1508,6 @@ Partial Class display105Form
         CType(Me.PictureBox17,System.ComponentModel.ISupportInitialize).BeginInit
         Me.tab_VRP.SuspendLayout
         Me.GroupBox2.SuspendLayout
-        CType(Me.FAMISAppendedInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.PhoenixDataSet,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISCaseInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISApplicantInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISIndividualsInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISMedicaidInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISAFDCInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISIncomeInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISIandAInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISFoodStampInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
-        CType(Me.FAMISCaseChildBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         CType(Me.FAMISVRPInformationBindingSource,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
@@ -1689,6 +1691,16 @@ Partial Class display105Form
         Me.txt_EF.Size = New System.Drawing.Size(24, 20)
         Me.txt_EF.TabIndex = 41
         '
+        'FAMISApplicantInformationBindingSource
+        '
+        Me.FAMISApplicantInformationBindingSource.DataMember = "FAMISApplicantInformation"
+        Me.FAMISApplicantInformationBindingSource.DataSource = Me.PhoenixDataSet
+        '
+        'PhoenixDataSet
+        '
+        Me.PhoenixDataSet.DataSetName = "PhoenixDataSet"
+        Me.PhoenixDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
         'Label118
         '
         Me.Label118.AutoSize = true
@@ -1871,7 +1883,7 @@ Partial Class display105Form
         '
         Me.txt_EN.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISApplicantInformationBindingSource, "EN", true))
         Me.txt_EN.Location = New System.Drawing.Point(869, 306)
-        Me.txt_EN.MaxLength = 6
+        Me.txt_EN.MaxLength = 8
         Me.txt_EN.Name = "txt_EN"
         Me.txt_EN.Size = New System.Drawing.Size(56, 20)
         Me.txt_EN.TabIndex = 49
@@ -1911,7 +1923,7 @@ Partial Class display105Form
         '
         Me.txt_EK.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISApplicantInformationBindingSource, "EK", true))
         Me.txt_EK.Location = New System.Drawing.Point(421, 306)
-        Me.txt_EK.MaxLength = 6
+        Me.txt_EK.MaxLength = 8
         Me.txt_EK.Name = "txt_EK"
         Me.txt_EK.Size = New System.Drawing.Size(72, 20)
         Me.txt_EK.TabIndex = 46
@@ -2543,7 +2555,7 @@ Partial Class display105Form
         '
         Me.txt_EL.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISApplicantInformationBindingSource, "EL", true))
         Me.txt_EL.Location = New System.Drawing.Point(586, 306)
-        Me.txt_EL.MaxLength = 6
+        Me.txt_EL.MaxLength = 8
         Me.txt_EL.Name = "txt_EL"
         Me.txt_EL.Size = New System.Drawing.Size(64, 20)
         Me.txt_EL.TabIndex = 47
@@ -2663,7 +2675,7 @@ Partial Class display105Form
         '
         Me.txt_EM.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISApplicantInformationBindingSource, "EM", true))
         Me.txt_EM.Location = New System.Drawing.Point(729, 306)
-        Me.txt_EM.MaxLength = 6
+        Me.txt_EM.MaxLength = 8
         Me.txt_EM.Name = "txt_EM"
         Me.txt_EM.Size = New System.Drawing.Size(64, 20)
         Me.txt_EM.TabIndex = 48
@@ -3420,6 +3432,11 @@ Partial Class display105Form
         Me.txt_AQ.Size = New System.Drawing.Size(60, 20)
         Me.txt_AQ.TabIndex = 13
         '
+        'FAMISAppendedInformationBindingSource
+        '
+        Me.FAMISAppendedInformationBindingSource.DataMember = "FAMISAppendedInformation"
+        Me.FAMISAppendedInformationBindingSource.DataSource = Me.PhoenixDataSet
+        '
         'txt_AG
         '
         Me.txt_AG.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISCaseInformationBindingSource, "AG", true))
@@ -3428,6 +3445,11 @@ Partial Class display105Form
         Me.txt_AG.Name = "txt_AG"
         Me.txt_AG.Size = New System.Drawing.Size(32, 20)
         Me.txt_AG.TabIndex = 6
+        '
+        'FAMISCaseInformationBindingSource
+        '
+        Me.FAMISCaseInformationBindingSource.DataMember = "FAMISCaseInformation"
+        Me.FAMISCaseInformationBindingSource.DataSource = Me.PhoenixDataSet
         '
         'Label55
         '
@@ -3990,6 +4012,11 @@ Partial Class display105Form
         Me.txt_FK.Name = "txt_FK"
         Me.txt_FK.Size = New System.Drawing.Size(88, 20)
         Me.txt_FK.TabIndex = 18
+        '
+        'FAMISIndividualsInformationBindingSource
+        '
+        Me.FAMISIndividualsInformationBindingSource.DataMember = "FAMISIndividualsInformation"
+        Me.FAMISIndividualsInformationBindingSource.DataSource = Me.PhoenixDataSet
         '
         'txt_FL2
         '
@@ -5167,6 +5194,11 @@ Partial Class display105Form
         Me.txt_HH.Size = New System.Drawing.Size(24, 20)
         Me.txt_HH.TabIndex = 7
         '
+        'FAMISMedicaidInformationBindingSource
+        '
+        Me.FAMISMedicaidInformationBindingSource.DataMember = "FAMISMedicaidInformation"
+        Me.FAMISMedicaidInformationBindingSource.DataSource = Me.PhoenixDataSet
+        '
         'Label185
         '
         Me.Label185.AutoSize = true
@@ -5576,6 +5608,11 @@ Partial Class display105Form
         Me.txt_HA.Name = "txt_HA"
         Me.txt_HA.Size = New System.Drawing.Size(40, 20)
         Me.txt_HA.TabIndex = 0
+        '
+        'FAMISAFDCInformationBindingSource
+        '
+        Me.FAMISAFDCInformationBindingSource.DataMember = "FAMISAFDCInformation"
+        Me.FAMISAFDCInformationBindingSource.DataSource = Me.PhoenixDataSet
         '
         'Label199
         '
@@ -5990,6 +6027,11 @@ Partial Class display105Form
         Me.txt_KQ.Name = "txt_KQ"
         Me.txt_KQ.Size = New System.Drawing.Size(56, 20)
         Me.txt_KQ.TabIndex = 37
+        '
+        'FAMISIncomeInformationBindingSource
+        '
+        Me.FAMISIncomeInformationBindingSource.DataMember = "FAMISIncomeInformation"
+        Me.FAMISIncomeInformationBindingSource.DataSource = Me.PhoenixDataSet
         '
         'txt_KS
         '
@@ -8103,6 +8145,11 @@ Partial Class display105Form
         Me.txt_PN.Size = New System.Drawing.Size(15, 20)
         Me.txt_PN.TabIndex = 13
         '
+        'FAMISIandAInformationBindingSource
+        '
+        Me.FAMISIandAInformationBindingSource.DataMember = "FAMISIandAInformation"
+        Me.FAMISIandAInformationBindingSource.DataSource = Me.PhoenixDataSet
+        '
         'txt_PP
         '
         Me.txt_PP.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISIandAInformationBindingSource, "PP", true))
@@ -8767,6 +8814,11 @@ Partial Class display105Form
         Me.txt_LD.Name = "txt_LD"
         Me.txt_LD.Size = New System.Drawing.Size(79, 20)
         Me.txt_LD.TabIndex = 3
+        '
+        'FAMISFoodStampInformationBindingSource
+        '
+        Me.FAMISFoodStampInformationBindingSource.DataMember = "FAMISFoodStampInformation"
+        Me.FAMISFoodStampInformationBindingSource.DataSource = Me.PhoenixDataSet
         '
         'Label358
         '
@@ -14045,6 +14097,8 @@ Partial Class display105Form
         'grp_AlienInfo
         '
         Me.grp_AlienInfo.BackColor = System.Drawing.Color.Transparent
+        Me.grp_AlienInfo.Controls.Add(Me.Label711)
+        Me.grp_AlienInfo.Controls.Add(Me.txt_YA)
         Me.grp_AlienInfo.Controls.Add(Me.Label903)
         Me.grp_AlienInfo.Controls.Add(Me.txt_UL)
         Me.grp_AlienInfo.Controls.Add(Me.txt_UI)
@@ -14118,6 +14172,11 @@ Partial Class display105Form
         Me.txt_UI.Name = "txt_UI"
         Me.txt_UI.Size = New System.Drawing.Size(40, 20)
         Me.txt_UI.TabIndex = 8
+        '
+        'FAMISCaseChildBindingSource
+        '
+        Me.FAMISCaseChildBindingSource.DataMember = "FAMISCaseChild"
+        Me.FAMISCaseChildBindingSource.DataSource = Me.PhoenixDataSet
         '
         'Label902
         '
@@ -16390,7 +16449,7 @@ Partial Class display105Form
         Me.txt_RO.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISCaseChildBindingSource, "RO", true))
         Me.txt_RO.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txt_RO.Location = New System.Drawing.Point(563, 142)
-        Me.txt_RO.MaxLength = 6
+        Me.txt_RO.MaxLength = 8
         Me.txt_RO.Name = "txt_RO"
         Me.txt_RO.Size = New System.Drawing.Size(48, 20)
         Me.txt_RO.TabIndex = 29
@@ -16431,7 +16490,7 @@ Partial Class display105Form
         Me.txt_RN.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISCaseChildBindingSource, "RN", true))
         Me.txt_RN.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
         Me.txt_RN.Location = New System.Drawing.Point(452, 142)
-        Me.txt_RN.MaxLength = 6
+        Me.txt_RN.MaxLength = 8
         Me.txt_RN.Name = "txt_RN"
         Me.txt_RN.Size = New System.Drawing.Size(48, 20)
         Me.txt_RN.TabIndex = 28
@@ -17458,6 +17517,11 @@ Partial Class display105Form
         Me.txt_VQ.Size = New System.Drawing.Size(160, 20)
         Me.txt_VQ.TabIndex = 10
         '
+        'FAMISVRPInformationBindingSource
+        '
+        Me.FAMISVRPInformationBindingSource.DataMember = "FAMISVRPInformation"
+        Me.FAMISVRPInformationBindingSource.DataSource = Me.PhoenixDataSet
+        '
         'txt_VE
         '
         Me.txt_VE.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.FAMISVRPInformationBindingSource, "VE", true))
@@ -17837,66 +17901,6 @@ Partial Class display105Form
         Me.btn_Print.Text = "&Print Errors"
         Me.btn_Print.VisitedLinkColor = System.Drawing.Color.DarkGray
         '
-        'FAMISAppendedInformationBindingSource
-        '
-        Me.FAMISAppendedInformationBindingSource.DataMember = "FAMISAppendedInformation"
-        Me.FAMISAppendedInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'PhoenixDataSet
-        '
-        Me.PhoenixDataSet.DataSetName = "PhoenixDataSet"
-        Me.PhoenixDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'FAMISCaseInformationBindingSource
-        '
-        Me.FAMISCaseInformationBindingSource.DataMember = "FAMISCaseInformation"
-        Me.FAMISCaseInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISApplicantInformationBindingSource
-        '
-        Me.FAMISApplicantInformationBindingSource.DataMember = "FAMISApplicantInformation"
-        Me.FAMISApplicantInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISIndividualsInformationBindingSource
-        '
-        Me.FAMISIndividualsInformationBindingSource.DataMember = "FAMISIndividualsInformation"
-        Me.FAMISIndividualsInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISMedicaidInformationBindingSource
-        '
-        Me.FAMISMedicaidInformationBindingSource.DataMember = "FAMISMedicaidInformation"
-        Me.FAMISMedicaidInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISAFDCInformationBindingSource
-        '
-        Me.FAMISAFDCInformationBindingSource.DataMember = "FAMISAFDCInformation"
-        Me.FAMISAFDCInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISIncomeInformationBindingSource
-        '
-        Me.FAMISIncomeInformationBindingSource.DataMember = "FAMISIncomeInformation"
-        Me.FAMISIncomeInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISIandAInformationBindingSource
-        '
-        Me.FAMISIandAInformationBindingSource.DataMember = "FAMISIandAInformation"
-        Me.FAMISIandAInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISFoodStampInformationBindingSource
-        '
-        Me.FAMISFoodStampInformationBindingSource.DataMember = "FAMISFoodStampInformation"
-        Me.FAMISFoodStampInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISCaseChildBindingSource
-        '
-        Me.FAMISCaseChildBindingSource.DataMember = "FAMISCaseChild"
-        Me.FAMISCaseChildBindingSource.DataSource = Me.PhoenixDataSet
-        '
-        'FAMISVRPInformationBindingSource
-        '
-        Me.FAMISVRPInformationBindingSource.DataMember = "FAMISVRPInformation"
-        Me.FAMISVRPInformationBindingSource.DataSource = Me.PhoenixDataSet
-        '
         'FAMISCaseInformationTableAdapter
         '
         Me.FAMISCaseInformationTableAdapter.ClearBeforeFill = true
@@ -17941,6 +17945,28 @@ Partial Class display105Form
         '
         Me.FAMISAppendedInformationTableAdapter.ClearBeforeFill = true
         '
+        'txt_YA
+        '
+        Me.txt_YA.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.txt_YA.Location = New System.Drawing.Point(559, 49)
+        Me.txt_YA.MaxLength = 1
+        Me.txt_YA.Name = "txt_YA"
+        Me.txt_YA.ReadOnly = true
+        Me.txt_YA.Size = New System.Drawing.Size(56, 20)
+        Me.txt_YA.TabIndex = 1293
+        Me.txt_YA.TabStop = false
+        '
+        'Label711
+        '
+        Me.Label711.AutoSize = true
+        Me.Label711.Font = New System.Drawing.Font("Arial", 6!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.Label711.Location = New System.Drawing.Point(560, 69)
+        Me.Label711.Name = "Label711"
+        Me.Label711.Size = New System.Drawing.Size(14, 10)
+        Me.Label711.TabIndex = 1294
+        Me.Label711.Text = "YA"
+        Me.Label711.TextAlign = System.Drawing.ContentAlignment.BottomLeft
+        '
         'display105Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
@@ -17969,6 +17995,8 @@ Partial Class display105Form
         Me.Text = "Phoenix - 105 Form"
         Me.grp_AppInfo.ResumeLayout(false)
         Me.grp_AppInfo.PerformLayout
+        CType(Me.FAMISApplicantInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.PhoenixDataSet,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox2,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox3,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox4,System.ComponentModel.ISupportInitialize).EndInit
@@ -17976,20 +18004,26 @@ Partial Class display105Form
         CType(Me.PictureBox19,System.ComponentModel.ISupportInitialize).EndInit
         Me.grp_CaseInfo.ResumeLayout(false)
         Me.grp_CaseInfo.PerformLayout
+        CType(Me.FAMISAppendedInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.FAMISCaseInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         Me.tab_Main.ResumeLayout(false)
         Me.tab_CaseApp.ResumeLayout(false)
         Me.tab_IndivMedi.ResumeLayout(false)
         Me.grp_IndivInfo.ResumeLayout(false)
         Me.grp_IndivInfo.PerformLayout
+        CType(Me.FAMISIndividualsInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox5,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox6,System.ComponentModel.ISupportInitialize).EndInit
         Me.grp_MediInfo.ResumeLayout(false)
         Me.grp_MediInfo.PerformLayout
+        CType(Me.FAMISMedicaidInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.FAMISAFDCInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox8,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox7,System.ComponentModel.ISupportInitialize).EndInit
         Me.tab_TanfIncome.ResumeLayout(false)
         Me.grp_IncInfo.ResumeLayout(false)
         Me.grp_IncInfo.PerformLayout
+        CType(Me.FAMISIncomeInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox11,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox12,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox13,System.ComponentModel.ISupportInitialize).EndInit
@@ -18001,8 +18035,10 @@ Partial Class display105Form
         Me.tab_FoodIandA.ResumeLayout(false)
         Me.grp_IandAInfo.ResumeLayout(false)
         Me.grp_IandAInfo.PerformLayout
+        CType(Me.FAMISIandAInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         Me.grp_FoodStamp.ResumeLayout(false)
         Me.grp_FoodStamp.PerformLayout
+        CType(Me.FAMISFoodStampInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox15,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.PictureBox16,System.ComponentModel.ISupportInitialize).EndInit
         Me.tab_105A1.ResumeLayout(false)
@@ -18019,6 +18055,7 @@ Partial Class display105Form
         Me.tab_105B.PerformLayout
         Me.grp_AlienInfo.ResumeLayout(false)
         Me.grp_AlienInfo.PerformLayout
+        CType(Me.FAMISCaseChildBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         Me.GroupBox1.ResumeLayout(false)
         Me.GroupBox1.PerformLayout
         Me.grp_ChildIncInfo.ResumeLayout(false)
@@ -18030,17 +18067,6 @@ Partial Class display105Form
         Me.tab_VRP.ResumeLayout(false)
         Me.GroupBox2.ResumeLayout(false)
         Me.GroupBox2.PerformLayout
-        CType(Me.FAMISAppendedInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.PhoenixDataSet,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISCaseInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISApplicantInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISIndividualsInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISMedicaidInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISAFDCInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISIncomeInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISIandAInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISFoodStampInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
-        CType(Me.FAMISCaseChildBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         CType(Me.FAMISVRPInformationBindingSource,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
@@ -19472,5 +19498,7 @@ End Sub
     Friend WithEvents txt_TU As System.Windows.Forms.TextBox
     Friend WithEvents Label707 As System.Windows.Forms.Label
     Friend WithEvents Label708 As System.Windows.Forms.Label
+    Friend WithEvents Label711 As System.Windows.Forms.Label
+    Friend WithEvents txt_YA As System.Windows.Forms.TextBox
 
 End Class
