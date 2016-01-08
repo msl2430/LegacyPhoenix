@@ -1368,6 +1368,8 @@ Public Class display105Form
         txt_OM.Text = FAMISFoodStampInformation.OM.GetData
         txt_ON.Text = FAMISFoodStampInformation.ON1.GetData
         txt_OO.Text = FAMISFoodStampInformation.OO.GetData
+        txt_ZA.Text = FAMISFoodStampInformation.ZA.GetData
+        txt_ZF.Text = FAMISFoodStampInformation.ZF.GetData
 
         txt_PA.Text = FAMISIandAInformation.PA.GetData
         txt_PB.Text = FAMISIandAInformation.PB.GetData
@@ -1846,6 +1848,8 @@ Public Class display105Form
         FAMISFoodStampInformation.OM.SetData(txt_OM.Text)
         FAMISFoodStampInformation.ON1.SetData(txt_ON.Text)
         FAMISFoodStampInformation.OO.SetData(txt_OO.Text)
+        FAMISFoodStampInformation.ZA.SetData(txt_ZA.Text)
+        FAMISFoodStampInformation.ZF.SetData(txt_ZF.Text)
 
         FAMISIandAInformation.PA.SetData(txt_PA.Text)
         FAMISIandAInformation.PB.SetData(txt_PB.Text)

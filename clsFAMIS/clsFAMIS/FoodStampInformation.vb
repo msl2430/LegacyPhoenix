@@ -7,6 +7,7 @@ Public Class FoodStampInformation
     Public OA, OB, OC, OD, OE, OF1, OG, OH, OI, OJ, OK, OK1, OL, OM, ON1, OO, OP As FAMISBlock
     Public MU, NQ, NR, NS, NU, NV, NW, [OR], VB, VF, VH, OQ1, OQ2 As FAMISBlock
     Public WX, WY As FAMISBlock
+    Public ZA, ZF As FAMISBlock
 
     Public LC, LD, LE, LT, NG, NT As FAMISBlock_Date
 
@@ -109,6 +110,9 @@ Public Class FoodStampInformation
         LT = New FAMISBlock_Date("LT")
         NG = New FAMISBlock_Date("NG")
         NT = New FAMISBlock_Date("NT")
+
+        ZA = New FAMISBlock("ZA")
+        ZF = New FAMISBlock("ZF")
     End Sub
     Public Sub Dispose()
         '--Clean up when done--
@@ -207,5 +211,8 @@ Public Class FoodStampInformation
         LT.Deconstructor()
         NG.Deconstructor()
         NT.Deconstructor()
+
+        ZA.Deconstructor()
+        ZF.Deconstructor()
     End Sub
 End Class

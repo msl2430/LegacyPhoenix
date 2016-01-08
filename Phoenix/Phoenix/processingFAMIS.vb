@@ -2830,6 +2830,7 @@ Public Class processingFAMIS
                         glapiTP8.SubmitField(FAMISCaseChild(i).UG.FieldNumber, FAMISCaseChild(i).UG.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(i).UH.FieldNumber, FAMISCaseChild(i).UH.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(i).UI.FieldNumber, FAMISCaseChild(i).UI.GetData)
+                        glapiTP8.SubmitField(FAMISCaseChild(i).YA.FieldNumber, FAMISCaseChild(i).YA.GetData)
                         glapiTP8.TransmitPage()
                         GLink_PageErrorCheck("08", "07", False)
                         BGW_ProcessFAMIS.ReportProgress(5)
@@ -2875,6 +2876,8 @@ Public Class processingFAMIS
         'glapiTP8.SubmitField(FAMISMedicaidInformation.WT.FieldNumber, FAMISMedicaidInformation.WT.GetData) --Protected--
         'glapiTP8.SubmitField(FAMISMedicaidInformation.WU.FieldNumber, FAMISMedicaidInformation.WU.GetData) --Protected--
         'glapiTP8.SubmitField(FAMISMedicaidInformation.WV.FieldNumber, FAMISMedicaidInformation.WV.GetData) --Protected--
+        glapiTP8.SubmitField(FAMISFoodStampInformation.ZA.FieldNumber, FAMISFoodStampInformation.ZA.GetData)
+        glapiTP8.SubmitField(FAMISFoodStampInformation.ZF.FieldNumber, FAMISFoodStampInformation.ZF.GetData)
         Thread.Sleep(100)
     End Sub
 

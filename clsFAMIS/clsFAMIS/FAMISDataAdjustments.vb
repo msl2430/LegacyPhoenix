@@ -68,6 +68,16 @@ Public Class FAMISDataAdjustments
                 .QL.SetData(" ")
                 .TD.SetData(" ")
             End If
+
+            'GUMP sends RD as a length of 2 - Set it to 1
+            .RD.Length = 1
+
+            If Not String.IsNullOrEmpty(.RD.GetData.Replace(" ", "")) Then
+                Dim tempRD As String = .RD.GetData
+                .RD.SetData(tempRD.Replace(" ", "").Substring(0, 1))
+            Else
+                .RD.SetData(" ")
+            End If
         End With
     End Sub
     Public Sub del_LineN(ByRef FoodInfo As FoodStampInformation)
