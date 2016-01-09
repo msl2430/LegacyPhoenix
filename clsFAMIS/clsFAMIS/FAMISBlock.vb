@@ -14,6 +14,7 @@ Public Class FAMISBlock
     Friend Data As String                 '--Data--
     Friend DateSize As Integer            '--Size of Final Date String--
     Friend isSpaceAllowed As Boolean      '--Boolean to determine if the block allows spaces inbetween letters--
+    Friend IncludeDay As Boolean          '--Include day for date like MMDDYY vs MMYYYY
 
     Public Sub New()
         FieldNumber = Nothing
@@ -24,6 +25,7 @@ Public Class FAMISBlock
         Data = " "
         isSpaceAllowed = False
         isDeleteAllowed = False
+        IncludeDay = False
     End Sub
     Public Sub New(ByVal Name As String)
         FieldNumber = Nothing
@@ -82,6 +84,8 @@ Public Class FAMISBlock
                             isSpaceAllowed = xReader.ReadString()
                         Case "DeleteAllowed"
                             isDeleteAllowed = xReader.ReadString
+                        Case "IncludeDay"
+                            IncludeDay = xReader.ReadString()
                     End Select
                 End If
             End While

@@ -7,6 +7,7 @@ Public Class FAMISBlock_Date
         Length = Nothing
         StartIndex = Nothing
         DateSize = Nothing
+        IncludeDay = False
         Data = " "
         isSpaceAllowed = False
         isDeleteAllowed = True
@@ -45,6 +46,9 @@ Public Class FAMISBlock_Date
                 Else
                     Data = Data.Replace("/", "")
                     Data = Data.Replace(" ", "")
+                    If IncludeDay = True And Data.Length > 6 Then
+                        Data = String.Concat(Data.Substring(0, 4), Data.Substring(6))
+                    End If
                 End If
             End If
         End If
