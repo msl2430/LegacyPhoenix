@@ -1902,7 +1902,7 @@
 		<StartIndex>197</StartIndex>
 		<FileTable>FAMISFoodStampInformation</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
-		<DeleteAllowed>False</DeleteAllowed>
+		<DeleteAllowed>True</DeleteAllowed>
 	</LO>
 	<LP>
 		<FieldNumber>38</FieldNumber>
@@ -1910,7 +1910,7 @@
 		<StartIndex>201</StartIndex>
 		<FileTable>FAMISFoodStampInformation</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
-		<DeleteAllowed>False</DeleteAllowed>
+		<DeleteAllowed>True</DeleteAllowed>
 	</LP>
 	<LQ>
 		<FieldNumber>40</FieldNumber>
@@ -1975,7 +1975,7 @@
 		<StartIndex>230</StartIndex>
 		<FileTable>FAMISFoodStampInformation</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
-		<DeleteAllowed>False</DeleteAllowed>
+		<DeleteAllowed>True</DeleteAllowed>
 	</MD>
 	<ME1>
 		<FieldNumber>56</FieldNumber>
@@ -2640,7 +2640,7 @@
 		<StartIndex>295</StartIndex>
 		<FileTable>FAMISCaseChild</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
-		<DeleteAllowed>False</DeleteAllowed>
+		<DeleteAllowed>True</DeleteAllowed>
 	</RI>
 	<RJ1>
 		<FieldNumber>74</FieldNumber>
