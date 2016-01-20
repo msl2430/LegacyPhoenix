@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03E20EE4-626E-401A-B0DC-AD6397706D7A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Phoenix___Server.My.MyApplication</StartupObject>
+    <RootNamespace>Phoenix___Server</RootNamespace>
+    <AssemblyName>Phoenix - Server</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ApplicationIcon>Phoenix.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Phoenix - Server.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Phoenix - Server.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="phxGLink, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\clsGLink\clsGLink\bin\Release\phxGLink.dll</HintPath>
+    </Reference>
+    <Reference Include="phxIMPS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\clsIMPS\clsIMPS\bin\Release\phxIMPS.dll</HintPath>
+    </Reference>
+    <Reference Include="phxMedicaid, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\clsMedicaid\clsMedicaid\bin\Release\phxMedicaid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="clsGLink" />
+    <Import Include="clsIMPS" />
+    <Import Include="clsMedicaid" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.IO" />
+    <Import Include="System.Net.Sockets" />
+    <Import Include="System.Threading" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChildSupportModule.vb" />
+    <Compile Include="ClientData.vb" />
+    <Compile Include="ControlScreen.Designer.vb">
+      <DependentUpon>ControlScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ControlScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CSPModule.vb" />
+    <Compile Include="DisabilityModule.vb" />
+    <Compile Include="EmployerWages.vb" />
+    <Compile Include="FileCreation.vb" />
+    <Compile Include="FindModule.vb" />
+    <Compile Include="GlobalVariables.vb" />
+    <Compile Include="IMPsModule.vb" />
+    <Compile Include="LaborModule.vb" />
+    <Compile Include="LastQuarterModule.vb" />
+    <Compile Include="MedicaidDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MedicaidDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MedicaidFile.vb" />
+    <Compile Include="MedicaidModule.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PhoenixCaseDataDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhoenixCaseDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PhoenixCaseDataDataSet.vb">
+      <DependentUpon>PhoenixCaseDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb" />
+    <Compile Include="SSIModule.vb" />
+    <Compile Include="Users.vb" />
+    <Compile Include="WagesModule.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ControlScreen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ControlScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Glink">
+      <Guid>{EECBB8D0-AFAA-11D2-88E2-00105A3818B1}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="GlinkApi">
+      <Guid>{EECBB900-AFAA-11D2-88E2-00105A3818B1}</Guid>
+      <VersionMajor>7</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\IMPSBlock.xml">
+      <Link>IMPSBlock.xml</Link>
+    </Content>
+    <Content Include="Phoenix.ico" />
+    <None Include="Resources\GUMPBanner.gif" />
+    <None Include="Resources\ClientData.gif" />
+    <Content Include="Resources\MedicaidBanner.gif" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\IMPSBanner.gif" />
+    <None Include="Resources\RedBG1.jpg" />
+    <None Include="MedicaidDataSet.xsc">
+      <DependentUpon>MedicaidDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MedicaidDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MedicaidDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MedicaidDataSet.xss">
+      <DependentUpon>MedicaidDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhoenixCaseDataDataSet.xsc">
+      <DependentUpon>PhoenixCaseDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhoenixCaseDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhoenixCaseDataDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PhoenixCaseDataDataSet.xss">
+      <DependentUpon>PhoenixCaseDataDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,169 @@
+html, body 
+{
+	background-color: #c0c0c0;
+	background: url('img/bgmain.jpg') center;
+	color: #433f3d;
+	font-family: Palatino Linotype, Garamond, Serif;
+	margin-top: 0px;
+	height: 100%;
+}
+
+.container
+{
+	background: url('img/bgcontainer.gif') repeat-y;
+	width:780px;
+	border-left: solid 1px Black;
+	border-right: solid 1px Black;
+	min-height: 750px;
+	height: 750px;
+	margin: 0px auto;
+}
+
+.menu
+{
+	background: url('img/bgmenu.gif') repeat-x;
+	height: 30px;
+	margin: 0 auto;
+	border-top: solid 1px Black;
+}
+
+.menulink
+{
+	height: 25px;
+	padding: 3px 20px 0px 20px;
+	color: #410401;
+	text-align: center;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-weight:bolder;
+	font-size: small;
+	display: inline-block;
+	text-decoration: none;
+	border-left: solid 1px black;
+	border-right: solid 1px black;
+	margin-left: -5px;
+}
+
+a.menulink:link
+{
+	text-decoration: none;
+}
+a.menulink:visited
+{
+	text-decoration: none;
+}
+
+a.menulink:hover
+{
+	text-decoration: none;
+	background-color: #B6A79E;
+}
+
+.hovermenu
+{
+	font-size: small;
+	height: 25px;
+	width: 185px;
+	padding: 5px 0px 5px 10px;
+	border: solid 1px black;
+}
+
+.header
+{
+	
+	background: url('img/headline_beta.jpg');
+	width: 780px;	
+	height: 75px;
+}
+
+.button
+{
+	color: #410401;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-weight:bolder;
+}
+
+.submitbutton
+{
+	color: #410401;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-weight:bolder;
+	float: right;
+	margin-right: 25px;
+}
+
+.searchpanel
+{
+	width: 350px;
+	background-color: #e5d9bd;
+	margin: 5px 20px 20px 20px;
+	float: left;
+}
+
+.searchlabel
+{
+	color: #410401;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: small;
+}
+
+.resultpanel
+{
+	width: 350px;
+	height: 270px;
+	background-color: #e1dcda;
+	margin: 5px 25px 0px 0px;
+	float: right;
+}
+
+.clear
+{
+	clear: both;	
+}
+
+.errormessage
+{
+	position:absolute;
+	z-index: 1;
+}
+
+.MaskedEditFocus
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditMessage
+{
+	color: #ff0000;
+	font-weight: bold;
+}
+.MaskedEditError
+{
+    background-color: #ffcccc;
+}
+.MaskedEditFocusNegative
+{
+    background-color: #ffffcc;
+    color: #000000;
+}
+.MaskedEditBlurNegative
+{
+    color: #ff0000;
+}
+
+.footer
+{
+	background: url('img/bgfooter.gif') repeat-x;
+	height: 30px;
+	min-height: 30px;
+	width: 780px;
+	margin: -25px auto;
+	border: solid 1px Black;
+	text-align: right;
+}
+
+.footertext
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: x-small;
+	color: #c4b6b5;
+}

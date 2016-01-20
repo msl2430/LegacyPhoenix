@@ -1,0 +1,67 @@
+<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="old_Lookup.aspx.vb" Inherits="Lookup" title="Phoenix - Lookup" %>
+<asp:Content ID="LookupHeader" ContentPlaceHolderID="content_Header" Runat="Server">
+    <asp:Image ID="img_Header" runat="server" ImageUrl="img/headline_beta.jpg" />
+</asp:Content>
+<asp:Content ID="LookupEntry" ContentPlaceHolderID="content_Main" Runat="Server">
+     <asp:Label ID="lbl_CaseSubmitted" runat="server" Text=" " CssClass="submittedlabel" />&nbsp;
+     <table class="table" cellpadding="5">
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_SSN" runat="server" Text="Social Security Number:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_SSN" runat="server" MaxLength="9" /></td>
+            <td style="width:300px; font-weight:bolder; font-size:medium;" rowspan="10" valign="top"><p>* All fields required.<br /><br />* Only click Submit once.<br /><br />* Systems searched: <br />&nbsp;&nbsp;&nbsp;&nbsp;FAMIS<br />&nbsp;&nbsp;&nbsp;&nbsp;WAGES<br />&nbsp;&nbsp;&nbsp;&nbsp;UIB<br />&nbsp;&nbsp;&nbsp;&nbsp;DABS<br />&nbsp;&nbsp;&nbsp;&nbsp;RSDI<br />&nbsp;&nbsp;&nbsp;&nbsp;SSI<br />&nbsp;&nbsp;&nbsp;&nbsp;Child Support</p></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_FirstName" runat="server" Text="First Name:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_FirstName" runat="server" MaxLength="10" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_LastName" runat="server" Text="Last Name:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_LastName" runat="server" MaxLength="12" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_Sex" runat="server" Text="Sex:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:DropDownList ID="drop_Sex" runat="server" >
+                <asp:ListItem>M</asp:ListItem>
+                <asp:ListItem>F</asp:ListItem>
+            </asp:DropDownList></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_DateOfBirth" runat="server" Text="Date Of Birth:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_DateOfBirth" runat="server" MaxLength="10" Width="80px" /></td>
+         </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_Address" runat="server" Text="Address:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_Address1" runat="server" MaxLength="20" /><br /><asp:TextBox ID="txt_Address2" runat="server" MaxLength="20" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_City" runat="server" Text="City:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_City" runat="server" MaxLength="18" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_State" runat="server" Text="State:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;" valign="top"><asp:TextBox ID="txt_State" runat="server" MaxLength="2" Width="25px" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"><asp:Label ID="lbl_ZipCode" runat="server" Text="Zip:" CssClass="lookuplabel" /></td>
+            <td style="width:200px;"><asp:TextBox ID="txt_ZipCode" runat="server" MaxLength="9" Width="80px" /></td>
+        </tr>
+        <tr>
+            <td style="width:200px; text-align: right;"  valign="top"></td>
+            <td style="width:200px;"><asp:Button ID="btn_Submit" runat="server" Text="Submit" Width="100px" CausesValidation="False"/>
+                <br />
+                <asp:Label ID="lbl_Error" runat="server" CssClass="errorlabel" Text="* All fields required." Visible="false" />
+            </td>
+        </tr>
+     </table>
+    <ajaxToolkit:MaskedEditExtender ID="masked_SSN" runat="server" Mask="999-99-9999" MaskType="Number" TargetControlID="txt_SSN" />
+    <ajaxToolkit:MaskedEditExtender ID="masked_DOB" runat="server" Mask="99/99/9999" MaskType="Date" TargetControlID="txt_DateOfBirth" />
+    <asp:RequiredFieldValidator ID="req_SSN" runat="server" ControlToValidate="txt_SSN" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_FirstName" runat="server" ControlToValidate="txt_FirstName" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_LastName" runat="server" ControlToValidate="txt_LastName" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_DateOfBirth" runat="server" ControlToValidate="txt_DateOfBirth" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_Address1" runat="server" ControlToValidate="txt_Address1" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_City" runat="server" ControlToValidate="txt_City" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_State" runat="server" ControlToValidate="txt_State" Display="None" ErrorMessage="RequiredFieldValidator" />
+    <asp:RequiredFieldValidator ID="req_ZipCode" runat="server" ControlToValidate="txt_ZipCode" Display="None" ErrorMessage="RequiredFieldValidator" />
+</asp:Content>
+

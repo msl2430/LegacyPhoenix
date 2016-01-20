@@ -1,0 +1,40 @@
+<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="Reports.aspx.vb" Inherits="Reports" title="Phoenix - Reports" %>
+<asp:Content ID="ReportHeader" ContentPlaceHolderID="content_Header" runat="server">
+<asp:image ID="main_Header" runat="server" ImageUrl="img/headline_Report.jpg" />
+</asp:Content>
+<asp:Content ID="ReportMain" ContentPlaceHolderID="content_Main" Runat="Server">
+<div class="reportleft">
+    <asp:Image ID="img_FAMISHeadline" runat="server" ImageUrl="img/headline_FAMIS.png" /><br />
+    <div class="reportlink">
+        <a><asp:LinkButton ID="link_All" runat="server" CssClass="reportlink">Completed Cases</asp:LinkButton></a><br />
+        <a><asp:LinkButton ID="link_Supervisor" runat="server" CssClass="reportlink">Completed Cases by Supervisor</asp:LinkButton></a>
+        <asp:DropDownList ID="drop_Supervisor" runat="server" CssClass="choicebox" style="float:left;"/>
+        <div style="float: left;">
+        <asp:UpdatePanel ID="update_Supervisor" runat="server">
+            <ContentTemplate>
+                <asp:Label ID="lbl_SupvError" runat="server" Text="Please select a Supervisor" Visible="False" style="font-size: x-small; color: Red; margin: 5px 0px 0px 3px;" />
+            </ContentTemplate>
+            <Triggers>
+                <asp:AsyncPostBackTrigger ControlID="link_Supervisor" EventName="Click" />
+            </Triggers>
+        </asp:UpdatePanel>
+        </div>
+        <br />
+        <div style="clear: both;"></div>
+    </div>
+    <br />
+    <asp:Image ID="img_IMPSHeadline" runat="server" ImageUrl="img/headline_IMPs.png" /><br />
+    <div class="reportlink">
+        <a><asp:LinkButton ID="link_IMPs" runat="server" CssClass="reportlink">Completed Cases</asp:LinkButton></a>
+    </div>
+    <br />
+    <asp:Image ID="img_MedicaidHeadline" runat="server" ImageUrl="img/headline_Medicaid.png" /><br />
+    <div class="reportlink">
+        <a><asp:LinkButton ID="link_AllMedi" runat="server" CssClass="reportlink">All Completed Cases</asp:LinkButton></a><br />
+        <a><asp:LinkButton ID="link_Success" runat="server" CssClass="reportlink">Successful Cases</asp:LinkButton></a><br />
+        <a><asp:LinkButton ID="link_Dropped" runat="server" CssClass="reportlink">Dropped Cases</asp:LinkButton></a><br />
+        <a><asp:LinkButton ID="link_Redet" runat="server" CssClass="reportlink">Redet Deleted Cases</asp:LinkButton></a><br />
+    </div>
+</div>
+</asp:Content>
+

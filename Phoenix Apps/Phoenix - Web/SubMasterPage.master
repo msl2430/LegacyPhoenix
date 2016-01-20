@@ -1,0 +1,61 @@
+﻿<%@ Master Language="VB" CodeFile="SubMasterPage.master.vb" Inherits="SubMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Phoenix - Web</title>
+    <link href="SubMaster.css" rel="stylesheet" type="text/css" />
+    <link href="IMPsTREs.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="SubMaster" runat="server">
+    <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server" /> 
+    <div class="container">
+        <div class="header"><asp:ContentPlaceHolder ID="content_Header" runat="server" /></div>
+        <div class="menu">
+            <a href="Default.aspx" class="menulink" style="margin-left: 0px;"><asp:label ID="link_Home" runat="server" style="width: 75px;">Home</asp:label></a>
+            <a href="#" class="menulink"><asp:label ID="link_Reports" runat="server" style="width: 75px;">Reports</asp:label></a>
+            <a href="#" class="menulink"><asp:label ID="link_Forms" runat="server" style="width: 175px;">Forms</asp:label></a>
+            <asp:LinkButton ID="LinkButton3" runat="server" Visible="False">105 Look Up</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton4" runat="server" Visible="False">Something Else</asp:LinkButton>
+        </div>
+        <div class="clear"><span></span></div>   
+        <div class="clear"><span></span></div>
+        <asp:ContentPlaceHolder ID="content_Main" runat="server" />
+    </div>
+    <div style="margin: 0px; border-bottom: solid 2px Black;"></div>
+    <asp:ContentPlaceHolder ID="content_Frame" runat="server" />        
+    <asp:Menu ID="menu_Reports" runat="server"
+         BorderColor="#410401" BorderStyle="Solid" BorderWidth="1px" style="margin: 25px 0px 0px -21px;"
+    >
+        <LevelMenuItemStyles>
+            <asp:MenuItemStyle CssClass="hovermenu"/>
+        </LevelMenuItemStyles>
+        <StaticMenuItemStyle BackColor="#E1DCD9" Font-Bold="true" Font-Names="Palatino Linotype, Garamond, Serif" ForeColor="#410401"/>
+        <StaticHoverStyle BackColor="#B6A79E" />
+        <Items>
+            <%--<asp:MenuItem Text="Daily Recertifications" Value="menu_Recert"></asp:MenuItem>--%>
+            <asp:MenuItem Text="IMPs / TRE Results" Value="menu_IMPs"></asp:MenuItem>
+            <asp:MenuItem Text="Individual Client Data" Value="menu_Client" NavigateUrl="~/Search.aspx"></asp:MenuItem>
+           <%-- <asp:MenuItem Text="30 Day Pending Cases" Value="menu_Clien"></asp:MenuItem>--%>
+        </Items>
+    </asp:Menu>
+    <asp:Menu ID="menu_Forms" runat="server"
+         BorderColor="#410401" BorderStyle="Solid" BorderWidth="1px" style="margin: 25px 0px 0px -21px;"
+    >
+        <LevelMenuItemStyles>
+            <asp:MenuItemStyle CssClass="hovermenu"/>
+        </LevelMenuItemStyles>
+        <StaticMenuItemStyle BackColor="#E1DCD9" Font-Bold="true" Font-Names="Palatino Linotype, Garamond, Serif" ForeColor="#410401"/>
+        <StaticHoverStyle BackColor="#B6A79E" />
+        <Items>
+            <asp:MenuItem Text="Client Data Submission" Value="menu_Recert" NavigateUrl="~/LookUp.aspx"></asp:MenuItem>
+            <asp:MenuItem Text="IRF Monthly Manifest" Value="menu_IRF" NavigateUrl="~/IRF.aspx"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+<ajaxToolkit:HoverMenuExtender ID="hover_Report" runat="server" PopupControlID="menu_Reports" TargetControlID="link_Reports" />
+<ajaxToolkit:HoverMenuExtender ID="hover_Forms" runat="server" PopupControlID="menu_Forms" TargetControlID="link_Forms" />    
+</form>
+</body>
+</html>

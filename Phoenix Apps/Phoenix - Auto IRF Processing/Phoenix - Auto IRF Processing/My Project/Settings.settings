@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="SQLAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172.16.8.15</Value>
+    </Setting>
+    <Setting Name="phxSQLConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GLinkDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\GLPro\</Value>
+    </Setting>
+    <Setting Name="FAMISOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16A247</Value>
+    </Setting>
+    <Setting Name="FAMISPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">MIKE3B</Value>
+    </Setting>
+    <Setting Name="FAMISKeyword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UAPCCS</Value>
+    </Setting>
+    <Setting Name="BatchNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">001</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

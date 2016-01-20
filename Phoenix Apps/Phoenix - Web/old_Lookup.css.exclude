@@ -1,0 +1,41 @@
+﻿.table
+{
+	width: 700px;
+	margin: 10px 0px 0px 100px;
+}
+
+.lookuplabel
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: small;
+	font-weight: bolder;
+	color: #410401;
+}
+
+.panel
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: small;
+	font-weight: bolder;
+	color: #e1dcda;
+}
+
+.errorlabel
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: small;
+	font-weight: bolder;
+	color: Red;
+}
+
+.submittedlabel
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: small;
+	font-weight: bolder;
+	color: Black;
+	margin: 5px 0px 5px 30px;
+	border: ridge 2px #8fd500;
+	background: #f2ffd7;
+	padding: 3px;
+}

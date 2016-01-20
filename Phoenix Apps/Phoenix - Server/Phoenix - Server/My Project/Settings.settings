@@ -1,0 +1,89 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172.16.8.15</Value>
+    </Setting>
+    <Setting Name="IMPSDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestCases</Value>
+    </Setting>
+    <Setting Name="MediDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">U:\GUOPTS\</Value>
+    </Setting>
+    <Setting Name="MediDropDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Phoenix OPTs</Value>
+    </Setting>
+    <Setting Name="MediOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">R94LEVI</Value>
+    </Setting>
+    <Setting Name="MediPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SILLY3</Value>
+    </Setting>
+    <Setting Name="IMPSOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16A215</Value>
+    </Setting>
+    <Setting Name="IMPSPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">IMPS4</Value>
+    </Setting>
+    <Setting Name="IMPSBatchPrefix" Type="System.String" Scope="User">
+      <Value Profile="(Default)">999</Value>
+    </Setting>
+    <Setting Name="IMPSBatchNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">001</Value>
+    </Setting>
+    <Setting Name="phxSQLConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PhoenixCaseDataConnectionString1" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=172.16.8.15\PHOENIX;Initial Catalog=PhoenixData;Persist Security Info=True;User ID=PhoenixUser;Password=password&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=172.16.8.15\PHOENIX;Initial Catalog=PhoenixData;Persist Security Info=True;User ID=PhoenixUser;Password=password</Value>
+    </Setting>
+    <Setting Name="TotalDate" Type="System.DateTime" Scope="User">
+      <Value Profile="(Default)">2007-10-24</Value>
+    </Setting>
+    <Setting Name="IMPSuccess" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IMPDrop" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="IMPTotal" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MediSuccess" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MediDrop" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MediTotal" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MediHold" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="GUMPFileDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="LOOPSOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">R94LUND</Value>
+    </Setting>
+    <Setting Name="LOOPSPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">123ABC</Value>
+    </Setting>
+    <Setting Name="FAMISOperatorID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">16A247</Value>
+    </Setting>
+    <Setting Name="FAMISPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">DELL5</Value>
+    </Setting>
+    <Setting Name="FAMISKeyword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">UAPSUP</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

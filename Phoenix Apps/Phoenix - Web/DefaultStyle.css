@@ -1,0 +1,79 @@
+﻿.bodycontainer
+{
+	width: 680px;
+	height: 150px;
+	margin: 20px 0px 0px 50px;
+}
+
+.navpanel
+{
+	width: 300px;
+	border: solid 1px #410401;
+	height: 325px;
+	float: left;
+	margin: 0px 0px 0px 20px;
+	background-color: #8f837b;
+}
+
+.navheadline
+{
+	border-bottom: solid 2px #410401;
+	background-color: #410401;
+	width: 300px;
+	height: 25px;
+	color: #e1dcd9;
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-weight: bold;
+}
+
+.navbody
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	margin-left: 15px;
+	margin-top: -18px;
+	color: Black;
+}
+
+.navbody dt
+{
+	font-size: medium;
+	font-weight: bold;
+	padding: 13px 0px 3px 0px;
+}
+
+.navbody dl
+{
+	font-size: small;
+	font-weight: normal;
+}
+
+.navbody a
+{
+	font-family: Palatino Linotype, Garamond, Serif;
+	color: #410401;
+	text-decoration: none;
+}
+
+.navbody a:hover
+{
+	color: #b6a79e;
+}
+
+.welcomeblock
+{
+	width: 375px;
+	height: 130px;
+	font-family: Palatino Linotype, Garamond, Serif;
+	font-size: medium;
+	text-align: center;
+	float: left;
+	margin-left: 80px;
+	margin-top: 5px;
+}
+.logo
+{
+	margin-left: -70px;
+	margin-top: -5px;
+}

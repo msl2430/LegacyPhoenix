@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ServerAddress" Type="System.String" Scope="User">
+      <Value Profile="(Default)">172.16.8.15</Value>
+    </Setting>
+    <Setting Name="MediDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestCases</Value>
+    </Setting>
+    <Setting Name="MediHoldDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestCases\Holds</Value>
+    </Setting>
+    <Setting Name="MediOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">R94LEVI</Value>
+    </Setting>
+    <Setting Name="MediPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SILLY4</Value>
+    </Setting>
+    <Setting Name="phxSQLConn" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="MediFamilyDirectory" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\TestCases\FamilyHolds</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
