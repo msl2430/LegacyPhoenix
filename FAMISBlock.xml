@@ -2908,7 +2908,7 @@
 	<TD>
 		<FieldNumber>28</FieldNumber>
 		<FieldLength>2</FieldLength>
-		<StartIndex>389</StartIndex>
+		<StartIndex>390</StartIndex>
 		<FileTable>FAMISCaseChild</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
 		<DeleteAllowed>False</DeleteAllowed>
@@ -2925,7 +2925,7 @@
 	<TF>
 		<FieldNumber>32</FieldNumber>
 		<FieldLength>1</FieldLength>
-		<StartIndex>380</StartIndex>
+		<StartIndex>381</StartIndex>
 		<FileTable>FAMISCaseChild</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
 		<DeleteAllowed>False</DeleteAllowed>
@@ -3038,7 +3038,7 @@
 	<TS>
 		<FieldNumber>58</FieldNumber>
 		<FieldLength>2</FieldLength>
-		<StartIndex>623</StartIndex>
+		<StartIndex>629</StartIndex>
 		<FileTable>FAMISCaseChild</FileTable>
 		<SpaceAllowed>False</SpaceAllowed>
 		<DeleteAllowed>False</DeleteAllowed>

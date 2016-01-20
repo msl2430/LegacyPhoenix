@@ -185,7 +185,7 @@ Public Class display105Form
                     ParentForm_Processing.isRedo_Page5 = True
                 Case "OA", "OB", "OC", "OD", "OE", "OF", "OG", "OJ", "OK", "OM", "ON1", "PA", "PB", "PD", "PE", "PF", "PI", "PJ", "PL", "PM", "PN", "PP", "OP", "OR"
                     ParentForm_Processing.isRedo_Page6 = True
-                Case "QB", "QC", "QD", "QE", "QE1", "QF", "QG", "QH", "QI", "QI1", "QI2", "QJ", "QK", "QL", "QM", "QN", "QO", "RA", "RB", "RC", "RD", "RG", "RH", "RI", "RJ", "RK", "RL", "RM", "RN", "RO", "RP", "RQ", "SA", "SB", "SC", "SD", "SE", "SF", "SG", "SH", "SI", "SJ", "SL", "SN", "SO", "SP", "SQ", "SR", "SS", "TB", "TD", "TE", "TG", "TH", "TI", "TJ", "TK", "TL", "TM", "TO", "TP", "TQ", "TR", "TS", "UA", "UB", "UD", "UE", "UF", "UG", "UH", "UI", "QU", "RT", "RS", "TU"
+                Case "QB", "QC", "QD", "QE", "QE1", "QF", "QG", "QH", "QI", "QI1", "QI2", "QJ", "QK", "QL", "QM", "QN", "QO", "RA", "RB", "RC", "RD", "RG", "RH", "RI", "RJ", "RK", "RL", "RM", "RN", "RO", "RP", "RQ", "SA", "SB", "SC", "SD", "SE", "SF", "SG", "SH", "SI", "SJ", "SL", "SN", "SO", "SP", "SQ", "SR", "SS", "TB", "TD", "TE", "TG", "TH", "TI", "TJ", "TK", "TL", "TM", "TO", "TP", "TQ", "TR", "TS", "UA", "UB", "UD", "UE", "UF", "UG", "UH", "UI", "QU", "RT", "RS", "TU", "YA"
                     If Not isChildChanging Then
                         For i = 0 To ChildChangeCount - 1
                             If ParentForm_Processing.Redo_ChildNum(i) = ChildNumber Then
@@ -200,7 +200,7 @@ Public Class display105Form
                     End If
                 Case "VA", "VC", "OL", "PO", "VE", "VG", "VI", "VK", "VM", "VO", "VQ", "OL", "PO"
                     ParentForm_Processing.isRedo_Page9 = True
-                Case "WH", "WI", "WN", "WO", "WP", "WQ", "WS"
+                Case "WH", "WI", "WN", "WO", "WP", "WQ", "WS", "ZA", "ZF"
                     ParentForm_Processing.isRedo_Page10 = True
             End Select
         End If

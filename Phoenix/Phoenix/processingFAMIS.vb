@@ -1370,7 +1370,7 @@ Public Class processingFAMIS
             BlockCompare(FAMISCaseChild(i).UL, SQLCaseChild(i).UL)
 
             BlockCompare(FAMISCaseChild(i).QU, SQLCaseChild(i).QU)
-            BlockCompare(FAMISCaseChild(i).RS, SQLCaseChild(i).RS)
+            'BlockCompare(FAMISCaseChild(i).RS, SQLCaseChild(i).RS)
             BlockCompare(FAMISCaseChild(i).RT, SQLCaseChild(i).RT)
             BlockCompare(FAMISCaseChild(i).ST, SQLCaseChild(i).ST)
             BlockCompare(FAMISCaseChild(i).TT, SQLCaseChild(i).TT)
@@ -1850,7 +1850,7 @@ Public Class processingFAMIS
                     If Not isBlankedSQL(FAMISCaseChild(i).UL, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     'If Not isBlankedSQL(FAMISCaseChild(i).YA, "FAMISCaseChild") Then isGoToChild(i) = True
                     If Not isBlankedSQL(FAMISCaseChild(i).QU, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
-                    If Not isBlankedSQL(FAMISCaseChild(i).RS, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
+                    'If Not isBlankedSQL(FAMISCaseChild(i).RS, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     If Not isBlankedSQL_DateTime(FAMISCaseChild(i).RT, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     If Not isBlankedSQL(FAMISCaseChild(i).ST, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     If Not isBlankedSQL(FAMISCaseChild(i).TT, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
@@ -2540,7 +2540,7 @@ Public Class processingFAMIS
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RP.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RP.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RQ.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RQ.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RR.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RR.GetData)
-                        glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RS.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RS.GetData)
+                        'glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RS.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RS.GetData) --Protected--
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RT.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RT.GetData)
 
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).SA.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).SA.GetData)
@@ -2642,7 +2642,7 @@ Public Class processingFAMIS
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RP.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RP.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RQ.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RQ.GetData)
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RR.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RR.GetData)
-                        glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RS.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RS.GetData)
+                        'glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RS.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RS.GetData) --Protected--
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).RT.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).RT.GetData)
 
                         glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).SA.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).SA.GetData)
@@ -2769,7 +2769,7 @@ Public Class processingFAMIS
                     glapiTP8.SubmitField(FAMISCaseChild(i).RP.FieldNumber, FAMISCaseChild(i).RP.GetData)
                     glapiTP8.SubmitField(FAMISCaseChild(i).RQ.FieldNumber, FAMISCaseChild(i).RQ.GetData)
                     glapiTP8.SubmitField(FAMISCaseChild(i).RR.FieldNumber, FAMISCaseChild(i).RR.GetData)
-                    glapiTP8.SubmitField(FAMISCaseChild(i).RS.FieldNumber, FAMISCaseChild(i).RS.GetData)
+                    'glapiTP8.SubmitField(FAMISCaseChild(i).RS.FieldNumber, FAMISCaseChild(i).RS.GetData) --Protected--
                     glapiTP8.SubmitField(FAMISCaseChild(i).RT.FieldNumber, FAMISCaseChild(i).RT.GetData)
 
                     glapiTP8.SubmitField(FAMISCaseChild(i).SA.FieldNumber, FAMISCaseChild(i).SA.GetData)
