@@ -1,7 +1,7 @@
 '--Developed by Michael Levine-- 2/2008
 Module GlobalVariables
 
-    Friend Const isSecurityAvailable As Boolean = True '--If the county is using security or not--
+    Friend Const isSecurityAvailable As Boolean = False '--If the county is using security or not--
 
     '--Module to hold variables used across all forms--
     Public FAMISCaseInformation, SQLCaseInformation As CaseInformation

@@ -9,7 +9,7 @@
       <Value Profile="(Default)">C:\GLPro\</Value>
     </Setting>
     <Setting Name="GLinkVisible" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="FAMISKeyword" Type="System.String" Scope="User">
       <Value Profile="(Default)">UAPSUP</Value>

@@ -3586,7 +3586,7 @@
   <ZF>
     <FieldNumber>64</FieldNumber>
     <FieldLength>1</FieldLength>
-    <StartIndex>878</StartIndex>
+    <StartIndex>874</StartIndex>
     <FileTable>FAMISFoodStampInformation</FileTable>
     <SpaceAllowed>False</SpaceAllowed>
     <DeleteAllowed>True</DeleteAllowed>
@@ -3636,7 +3636,7 @@
   <ZA>
     <FieldNumber>62</FieldNumber>
     <FieldLength>1</FieldLength>
-    <StartIndex>874</StartIndex>
+    <StartIndex>878</StartIndex>
     <FileTable>FAMISFoodStampInformation</FileTable>
     <SpaceAllowed>False</SpaceAllowed>
     <DeleteAllowed>True</DeleteAllowed>
@@ -3692,7 +3692,7 @@
     <DeleteAllowed>False</DeleteAllowed>
   </TU>
   <YA>
-    <FieldNumber>86</FieldNumber>
+    <FieldNumber>88</FieldNumber>
     <FieldLength>1</FieldLength>
     <StartIndex>780</StartIndex>
     <FileTable>FAMISCaseChild</FileTable>

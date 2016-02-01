@@ -1855,7 +1855,6 @@ Public Class processingFAMIS
                     If Not isBlankedSQL(FAMISCaseChild(i).ST, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     If Not isBlankedSQL(FAMISCaseChild(i).TT, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
                     If Not isBlankedSQL_DateTime(FAMISCaseChild(i).TU, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True
-                    If Not isBlankedSQL(FAMISCaseChild(i).YA, "FAMISCaseChild", FAMISCaseChild(i).QA.GetData) Then isGoToChild(i) = True                    
                 Next
 
                 SQLConn.Open()
@@ -2599,6 +2598,7 @@ Public Class processingFAMIS
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UG.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UG.GetData)
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UH.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UH.GetData)
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UI.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UI.GetData)
+                            glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).YA.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).YA.GetData)
 
                             glapiTP8.TransmitPage()
                             GLink_PageErrorCheck("08", "07", False)
@@ -2700,6 +2700,7 @@ Public Class processingFAMIS
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UG.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UG.GetData)
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UH.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UH.GetData)
                             glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).UI.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).UI.GetData)
+                            glapiTP8.SubmitField(FAMISCaseChild(Redo_ChildNum(i)).YA.FieldNumber, FAMISCaseChild(Redo_ChildNum(i)).YA.GetData)
 
                             glapiTP8.TransmitPage()
                             GLink_PageErrorCheck("08", "07", False)
