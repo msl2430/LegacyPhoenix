@@ -141,8 +141,8 @@ Public Class FAMISDataAdjustments
             .LL.SetData(" ")
             .LM.SetData(" ")
             .LO.SetData(" ")
-            .LP.SetData("   ")
-            .LQ.SetData("   ")
+            '.LP.SetData("   ")
+            '.LQ.SetData("   ")
             .LR.SetData(" ")
             .LT.SetData("        ")
         End With
