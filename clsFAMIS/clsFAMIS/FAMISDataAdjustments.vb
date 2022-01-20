@@ -256,7 +256,10 @@ Public Class FAMISDataAdjustments
            FAMISMedicaidInformation.WW.GetData = "NPA" Or FAMISMedicaidInformation.WW.GetData = "NP7" Or _
            FAMISMedicaidInformation.WW.GetData = "NP8" Then FAMISMedicaidInformation.WW.SetData("   ")
         'If FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> "0" And FAMISApplicationInformation.DF.GetData.Substring(0, 1) <> " " Then FAMISApplicationInformation.DF.SetData("0" & FAMISApplicationInformation.DF.GetData.Substring(0, 2))
-        'If FAMISFoodStampInformation.LR.GetData = "D" Then FAMISFoodStampInformation.MR.SetData("454") '--changed from 411 3/22/11-- --changed from 435 9/12/2012-- --Removed 1/7/2015 as request from Jani email--
+        'If FAMISFoodStampInformation.LR.GetData = "D" Then --removed 8/5/2020 Tony sent email from John May complaining about something to do with a D in block LR going to remove this for now in case its the cause
+        '    FAMISFoodStampInformation.MR.SetData("548") '--changed from 411 3/22/11-- --changed from 435 9/12/2012-- --Removed 1/7/2015 as request from Jani email-- --added back in and changed to 548 email 2/19/2020
+        '    FAMISFoodStampInformation.LR.SetData(" ")
+        'End If
         If FAMISFoodStampInformation.LR.GetData = "W" Then FAMISFoodStampInformation.MR.SetData("-")
         If FAMISApplicationInformation.EG.GetData = "1" Or _
            FAMISApplicationInformation.EG.GetData = "C" Or _

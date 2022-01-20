@@ -70,7 +70,7 @@ Public NotInheritable Class Splash
                     MessageBox.Show("Update directory not found!" & vbCrLf & "Cannot check for updates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
                 End If
             Else
-                MessageBox.Show("Server not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Update server not found!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         Else
             MessageBox.Show("No update server provided." & vbCrLf & "Cannot check for updates.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk)
